@@ -1,0 +1,53 @@
+.nav {
+  background-color: grey;
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* --------- Logo Styles --------- */
+.logo-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: 36.8px;
+}
+
+/* --------- Searchbar Styles --------- */
+
+.sb-container {
+  display: flex;
+  flex: 3;
+}
+
+.sb-input {
+  height: 30px;
+  width: 250px;
+}
+
+.sb-btn {
+  border: 0;
+  border-radius: 5px;
+  padding: 0 25px;
+  margin-left: 5px;
+  background-color: #009ddc;
+  color: #ffffff;
+}
+
+/* --------- Nav Icons Styles --------- */
+
+.icons-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.fa {
+  color: white;
+  margin: 0 15px;
+}
