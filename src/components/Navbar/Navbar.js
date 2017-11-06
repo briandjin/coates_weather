@@ -16,6 +16,12 @@ class Navbar extends Component {
     });
   };
 
+  onEnterPress = e => {
+    if (e.charCode === 13) {
+      this.props.fetchWeather(this.state.userInput);
+    }
+  };
+
   render() {
     return (
       <nav className="nav">
@@ -23,19 +29,19 @@ class Navbar extends Component {
           <img src={logo} className="logo" alt="logo" />
         </div>
         <div className="sb-container">
-          <input className="sb-input" onChange={this.onInputChange} />
-          <button
-            className="sb-btn"
-            onClick={() => {
-              this.props.onButtonClick(this.state.userInput);
-            }}
-          >
+          <input
+            className="sb-input"
+            onKeyPress={this.onEnterPress}
+            onChange={this.onInputChange}
+            placeholder="Enter Location"
+          />
+          <button className="sb-btn" onClick={() => this.props.fetchWeather(this.state.userInput)}>
             Search
           </button>
         </div>
         <div className="icons-container">
-          <i class="fa fa-bell fa-lg" aria-hidden="true" />
-          <i class="fa fa-envelope fa-lg" aria-hidden="true" />
+          <i className="fa fa-bell fa-lg" aria-hidden="true" />
+          <i className="fa fa-envelope fa-lg" aria-hidden="true" />
         </div>
       </nav>
     );

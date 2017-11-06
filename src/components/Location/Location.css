@@ -1,0 +1,30 @@
+.loc-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cw-hi-container i,
+.cw-low-container i,
+.cw-hi-container h3,
+.cw-low-container h3 {
+  font-size: 2em;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  color: #f2f2f2f2;
+}
+
+.title-container h1 {
+  font-size: 2em;
+}
+
+.title-container i {
+  margin-left: 20px;
+  font-size: 2em;
+  cursor: pointer;
+}

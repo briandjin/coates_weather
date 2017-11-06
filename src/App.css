@@ -2,5 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 100;
 }
 
+.wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/45816/IMG_00000159_hdr.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.weather-section {
+  display: flex;
+  width: 90%;
+  margin-top: 5em;
+}
+
+.location-section {
+}
+
+.forecast-title {
+  display: flex;
+  align-items: center;
+  color: #f2f2f2f2;
+  width: 100%;
+  height: 2.5em;
+  background-color: #464646;
+}
+
+.forecast-title h1 {
+  margin-left: 10px;
+}
