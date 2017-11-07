@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #f2f2f2f2;
+  /*color: #f2f2f2f2;*/
+  color: white;
 }
 
 .cw-hi-lo-container,

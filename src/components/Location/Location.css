@@ -16,7 +16,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 5em;
-  color: #f2f2f2f2;
+  /*color: #f2f2f2f2;*/
+  color: white;
 }
 
 .title-container h1 {
